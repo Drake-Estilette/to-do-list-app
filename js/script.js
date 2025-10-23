@@ -38,11 +38,11 @@ function newItem() {
   let inputValue = $("#input").val();
   li.append(inputValue);
 
-  if (inputValue === "") {
-    alert("You must write something!");
-  } else {
-    $("#list").append(li);
-  }
+  // if (inputValue === "") {
+  //   alert("You must write something!");
+  // } else {
+  $("#list").append(li);
+  //}
   //2. Crossing an item out:
   function crossOut() {
     li.toggleClass("strike");
