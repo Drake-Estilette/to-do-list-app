@@ -1,6 +1,6 @@
 function newItem() {
   //1. Adding a new item to the list of items:
-  let li = $(<li></li>);
+  let li = $("<li></li>");
   let inputValue = $("#input").val();
   li.append(inputValue);
 
@@ -20,7 +20,7 @@ function newItem() {
   });
 
   //3(i). Adding the delete button "X":
-  let crossOutButton = $(<crossOutButton></crossOutButton>);
+  let crossOutButton = $("<crossOutButton></crossOutButton>");
   crossOutButton.append(document.createTextNode("X"));
   li.append(crossOutButton);
 
