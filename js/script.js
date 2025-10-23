@@ -38,7 +38,7 @@ function newItem() {
   let inputValue = $("#input").val();
   li.append(inputValue);
 
-  // if (inputValue === "") {
+  // if (inputValue === " ") {
   //   alert("You must write something!");
   // } else {
   $("#list").append(li);
@@ -48,9 +48,7 @@ function newItem() {
     li.toggleClass("strike");
   }
 
-  li.on("dblclick", function crossOut() {
-    li.toggleClass("strike");
-  });
+  li.on("dblclick", crossOut());
   //3. Adding a delete button
   let crossOutButton = $("<crossOutButton></crossOutButton>");
   crossOutButton.append(document.createTextNode("X"));
